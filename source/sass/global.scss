@@ -1,0 +1,14 @@
+body {
+  min-width: $mobile-min-width;
+  @include Ubuntu-Regular();
+
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

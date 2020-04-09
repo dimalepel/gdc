@@ -1,0 +1,61 @@
+  <include src="source/blocks/head.html"></include>
+  <include src="source/blocks/header.html"></include>
+
+  <main class="page-main">
+    <div class="container">
+      <h1 class="page-title">Контакты</h1>
+      <section class="page-content">
+        <div class="contacts">
+          <div class="contacts__item">
+            <p class="contacts__item-title">Главное представительство, г. Минск</p>
+            <ul class="contacts__list">
+              <li class="contacts__list-item"><a href="tel:">+375 (17) 284-60-67</a></li>
+              <li class="contacts__list-item"><a href="tel:">+375 (17) 343-47-61</a></li>
+              <li class="contacts__list-item"><a href="tel:">+375 (29) 304-60-67</a></li>
+            </ul>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__item-title">E-mail</p>
+            <ul class="contacts__list">
+              <li class="contacts__list-item"><a href="mailto:">Visavi55@hotmail.com</a></li>
+            </ul>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__item-title">Региональные представители</p>
+            <ul class="contacts__list">
+              <li class="contacts__list-item">г. Витебск: <a href="tel:">+375 (29) 389-92-15</a> (Ольга)</li>
+              <li class="contacts__list-item">г. Гродно: <a href="tel:">+375 (29) 669-69-40</a> (Алла)</li>
+              <li class="contacts__list-item">г. Брест: <a href="tel:">+375 (29) 822-05-71</a> (Инна)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <form class="form">
+            <div class="form__item">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input class="form__field" type="text" id="name" type="text" placeholder="Имя">
+            </div>
+            <div class="form__item">
+              <label class="visually-hidden" for="email">E-mail</label>
+              <input class="form__field" type="email" id="email" type="text" placeholder="E-mail">
+            </div>
+            <div class="form__item">
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input class="form__field" type="text" id="phone" type="text" placeholder="Телефон">
+            </div>
+            <div class="form__item">
+              <label class="visually-hidden" for="message">Сообщение</label>
+              <textarea class="form__field form__field--textarea" id="message" placeholder="Сообщение"></textarea>
+            </div>
+            <button class="button form__submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <include src="source/blocks/footer.html"></include>
+  <include src="source/blocks/scripts.html"></include>
+</body>
+</html>

@@ -1,0 +1,28 @@
+// Вставка миксина @include mixin_name();
+
+// Шрифты
+// Roboto Thin
+@mixin Roboto-Thin() {
+  font-family: "Roboto", "Arial", sans-serif; // без засечек
+  font-weight: 200;
+}
+
+// Ubuntu Regular
+@mixin Ubuntu-Regular() {
+  font-family: "Ubuntu", "Arial", sans-serif; // без засечек
+  font-weight: 400;
+}
+
+// Ubuntu Bold
+@mixin Ubuntu-Bold() {
+  font-family: "Ubuntu", "Arial", sans-serif; // без засечек
+  font-weight: 700;
+}
+
+// Сброс стилей списка
+@mixin ResetStyleList() {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
