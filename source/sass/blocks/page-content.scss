@@ -1,0 +1,30 @@
+.page-content {
+  &--contacts {
+    @media (min-width: $medium) {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $extra) {
+      justify-content: space-between;
+      margin-bottom: 67px;
+    }
+  }
+
+  &--grid {
+    @media (min-width: $large) {
+      display: flex;
+    }
+  }
+
+  .single-page & {
+    @media (min-width: $large) {
+      max-width: 700px;
+    }
+
+    @media (min-width: $extra) {
+      max-width: 780px;
+    }
+  }
+}

@@ -9,7 +9,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
-var jsmin = require("gulp-jsmin");
+//var jsmin = require("gulp-jsmin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
@@ -92,7 +92,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("imgcopy", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     //.pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"));
 });

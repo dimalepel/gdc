@@ -74,19 +74,7 @@
   }
 
   .slick-initialized & {
-    display: block;
-
-    @media (min-width: $tablet-min-width) {
-      &.single-product__gallery-item {
-        display: flex;
-      }
-    }
-
-    @media (min-width: $laptop-min-width) {
-      &.goods-item__gallery-item {
-        display: flex;
-      }
-    }
+    display: flex;
   }
 
   .slick-loading & {

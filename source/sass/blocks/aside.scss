@@ -1,0 +1,9 @@
+.aside {
+  max-width: 280px;
+  margin: 0 auto 10px auto;
+
+  @media (min-width: $large) {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+}

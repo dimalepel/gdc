@@ -1,0 +1,10 @@
+.page-footer {
+  padding-top: 25px;
+  padding-bottom: 38px;
+  background-color: #000000;
+
+  @media (min-width: $extra) {
+    padding-top: 44px;
+    padding-bottom: 69px;
+  }
+}

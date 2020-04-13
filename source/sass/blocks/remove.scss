@@ -1,0 +1,32 @@
+.remove {
+  position: relative;
+  display: block;
+  width: 19px;
+  height: 19px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  border: 0;
+  transform: rotate(45deg);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #b48258;
+  }
+
+  &::before {
+    width: 19px;
+    height: 1px;
+    top: 9px;
+    left: 0;
+  }
+
+  &::after {
+    width: 1px;
+    height: 19px;
+    top: 0;
+    left: 9px;
+  }
+}

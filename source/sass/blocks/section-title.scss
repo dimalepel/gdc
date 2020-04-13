@@ -1,0 +1,32 @@
+.section-title {
+  @include GothamPro-Regular();
+  font-size: 18px;
+  line-height: 160%;
+  color: #0d0d0d;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $extra) {
+    margin-top: 53px;
+    margin-bottom: 47px;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .news__wrapper & {
+    margin-bottom: 20px;
+    line-height: 40px;
+
+    @media (min-width: $extra) {
+      margin-top: 98px;
+      margin-bottom: 60px;
+    }
+  }
+}

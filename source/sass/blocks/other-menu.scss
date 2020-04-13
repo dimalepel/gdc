@@ -1,0 +1,35 @@
+.other-menu {
+  @include Unordered-List-Reset(0, 28px, 0);
+
+  @media (min-width: $medium) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}
+
+.other-menu__item {
+  text-align: center;
+
+  @media (min-width: $medium) {
+    margin-bottom: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media (min-width: $medium) {
+      margin-right: 72px;
+    }
+  }
+
+  & > a {
+    @include Muller-Bold();
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #737373;
+    text-decoration: none;
+  }
+}

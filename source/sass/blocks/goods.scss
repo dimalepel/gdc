@@ -1,0 +1,80 @@
+.goods {
+  @include Unordered-List-Reset();
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: -5px;
+  margin-left: -5px;
+
+  @media (min-width: $extra) {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+}
+
+.goods__wrapper {
+  padding-top: 20px;
+}
+
+.goods__title {
+  margin-top: 20px;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+
+  @include GothamPro-Regular();
+  font-size: 20px;
+  line-height: 32px;
+  color: #b48258;
+  border-bottom: 1px solid #ede3da;
+
+  @media (min-width: $extra) {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
+.goods__item {
+  width: calc(50% - 10px);
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+
+  @media (min-width: $small) {
+    width: calc(100% / 3 - 10px);
+  }
+
+  @media (min-width: $extra) {
+    width: calc(100% / 3 - 20px);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.goods__thumbnail-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+
+  @media (min-width: $extra) {
+    height: 240px;
+  }
+}
+
+.goods__thumbnail {
+  display: block;
+}
+
+.goods__item-title {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  @media (min-width: $extra) {
+    margin-top: 13px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,278 @@
+.about-page {
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (min-width: $extra) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  & p {
+    margin-top: 21px;
+    margin-bottom: 20px;
+  }
+}
+
+.about-page__gray-overlay {
+  background-color: #f3f1ec;
+
+  @media (min-width: $extra) {
+    padding-bottom: 71px;
+  }
+}
+
+.about-page__white-overlay {
+  background-color: #ffffff;
+  @media (min-width: $extra) {
+    padding-bottom: 96px;
+  }
+}
+
+.about-page__title {
+  margin-top: 35px;
+  margin-bottom: 40px;
+
+  @include Muller-Light();
+  font-size: 26px;
+  line-height: 36px;
+  color: #b48258;
+
+  @media (min-width: $extra) {
+    margin-top: 98px;
+    max-width: 700px;
+    margin-left: -10px;
+    margin-bottom: 50px;
+    font-size: 34px;
+    line-height: 48px;
+  }
+
+  & span {
+    padding: 5px 20px 5px 15px;
+    box-decoration-break: clone;
+    background-color: #ffffff;
+
+    @media (min-width: $extra) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.about-page__item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media (min-width: $medium) {
+    display: flex;
+    align-items: center;
+  }
+
+  &--promo {
+    @media (min-width: $extra) {
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    & .about-page__content {
+      @media (min-width: $extra) {
+        max-width: 59%;
+      }
+    }
+  }
+
+  &--full {
+    margin-right: -10px;
+    margin-left: -10px;
+
+    @media (min-width: $medium) {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 20px;
+      background-color: #ffffff;
+    }
+
+    @media (min-width: $large) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    & .about-page__content {
+      padding: 38px 10px 35px 10px;
+      background-color: #ffffff;
+
+      @media (min-width: $medium) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      @media (min-width: $extra) {
+        padding-left: 50px;
+      }
+    }
+
+    @media (min-width: $extra) {
+      margin-bottom: 50px;
+    }
+
+    & p {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 16px;
+      line-height: 24px;
+      color: #553f2c;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 22px;
+        height: 1px;
+        margin-bottom: 14px;
+        background-color: #b48258;
+      }
+    }
+  }
+
+  &--without-picture {
+    padding-top: 0;
+
+    & .about-page__sub-title {
+      margin-top: 8px;
+      margin-bottom: 30px;
+
+      @media (min-width: $extra) {
+        margin-bottom: 37px;
+      }
+    }
+
+    & .about-page__content {
+      @media (min-width: $extra) {
+        max-width: 700px;
+      }
+    }
+  }
+
+  &--founder {
+    margin-right: -10px;
+    margin-left: -10px;
+    padding-top: 0;
+
+    @media (min-width: $medium) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    @media (min-width: $extra) {
+      align-items: flex-end;
+      margin-bottom: 75px;
+    }
+
+    & .about-page__content {
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-top: 15px;
+
+      @media (min-width: $extra) {
+        padding-left: 0;
+      }
+    }
+
+    & .about-page__sub-title {
+      margin-bottom: 27px;
+    }
+
+    & p {
+      max-width: 90%;
+    }
+  }
+
+  &--philosophy {
+    padding-top: 0;
+    margin-right: -10px;
+    margin-left: -10px;
+
+    @media (min-width: $medium) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    & .about-page__content {
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-top: 15px;
+
+      @media (min-width: $extra) {
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.about-page__thumbnail {
+  display: block;
+
+  @media (min-width: $small) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $medium) {
+    flex-shrink: 0;
+
+    .about-page__item--promo & {
+      margin-left: 10px;
+
+      @media (min-width: $extra) {
+        margin: 0 auto;
+      }
+    }
+
+    .about-page__item--full & {
+      width: 50%;
+
+      @media (min-width: $extra) {
+        max-width: 100%;
+        width: auto;
+      }
+    }
+
+    .about-page__item--philosophy & {
+      max-width: 250px;
+
+      @media (min-width: $extra) {
+        max-width: 380px;
+      }
+    }
+
+    .about-page__item--founder & {
+      order: 1;
+
+      @media (min-width: $extra) {
+        transform: translateY(-131px);
+      }
+    }
+  }
+
+  @media (min-width: $large) {
+    .about-page__item--philosophy & {
+      margin-right: 120px;
+    }
+  }
+
+  &--center {
+    margin: 0 auto;
+  }
+}
+
+.about-page__sub-title {
+  margin-top: 30px;
+  @include Muller-Light();
+  font-size: 20px;
+  line-height: 26px;
+  color: #b48258;
+
+  @media (min-width: $extra) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

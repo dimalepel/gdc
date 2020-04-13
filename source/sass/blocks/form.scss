@@ -1,0 +1,155 @@
+.form {
+  &--order {
+    @media (min-width: $medium) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $large) {
+      max-width: 700px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $large) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+}
+
+.form__wrapper {
+  margin-right: -10px;
+  margin-left: -10px;
+  padding: 23px 10px 50px 10px;
+  background-color: #f6f5f1;
+
+  @media (min-width: $small) {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 50vh;
+      background-color: #f6f5f1;
+    }
+
+    &::before {
+      left: -50vh;
+    }
+
+    &::after {
+      right: -50vh;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $medium) {
+      width: 50%;
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 30px;
+      padding-left: 30px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    @media (min-width: $large) {
+      width: 60%;
+    }
+
+    @media (min-width: $extra) {
+      max-width: 640px;
+      padding-top: 13px;
+      padding-bottom: 32px;
+    }
+  }
+}
+
+.form__item {
+  margin-bottom: 23px;
+
+  .form--order & {
+    @media (min-width: $medium) {
+      width: calc((100% - 40px) / 3);
+    }
+  }
+
+  .form--contacts & {
+    @media (min-width: $large) {
+      width: calc((100% - 40px) / 3);
+    }
+
+    &--full {
+      @media (min-width: $medium) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.form__field {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @include Muller-Regular();
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  border: 0;
+  border-bottom: 1px solid #dcd3cb;
+  background-color: transparent;
+
+  &:focus {
+    border-color: #b48258;;
+  }
+
+  &::placeholder {
+    @include Muller-Regular();
+    color: #b48258;
+  }
+
+  &--textarea {
+    height: 237px;
+    resize: none;
+
+    @media (min-width: $medium) {
+      height: 115px;
+    }
+  }
+}
+
+.form__submit {
+  width: 219px;
+  margin-top: 39px;
+
+  .form--order & {
+    @media (min-width: $large) {
+      margin-left: 0;
+    }
+
+    @media (min-width: $extra) {
+      margin-top: 16px;
+    }
+  }
+
+  .form--contacts & {
+    @media (min-width: $extra) {
+      margin-top: 7px;
+    }
+  }
+}
+
+
+

@@ -1,28 +1,66 @@
 // Вставка миксина @include mixin_name();
 
 // Шрифты
-// Roboto Thin
-@mixin Roboto-Thin() {
-  font-family: "Roboto", "Arial", sans-serif; // без засечек
-  font-weight: 200;
+// Muller Light
+@mixin Muller-Light() {
+  font-family: "Muller", "Arial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-// Ubuntu Regular
-@mixin Ubuntu-Regular() {
-  font-family: "Ubuntu", "Arial", sans-serif; // без засечек
+// Muller Regular
+@mixin Muller-Regular() {
+  font-family: "Muller", "Arial", sans-serif;
   font-weight: 400;
+  font-style: normal;
 }
 
-// Ubuntu Bold
-@mixin Ubuntu-Bold() {
-  font-family: "Ubuntu", "Arial", sans-serif; // без засечек
+// Muller Medium
+@mixin Muller-Medium() {
+  font-family: "Muller", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Muller Bold
+@mixin Muller-Bold() {
+  font-family: "Muller", "Arial", sans-serif;
   font-weight: 700;
+  font-style: normal;
 }
 
-// Сброс стилей списка
-@mixin ResetStyleList() {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+// Gotham Pro Regular
+@mixin GothamPro-Regular() {
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Gotham Pro Medium
+@mixin GothamPro-Medium() {
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Playfair Display Regular
+@mixin PlayfairDisplay-Regular() {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Playfair Display Bold
+@mixin PlayfairDisplay-Bold() {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Обнуление списка
+@mixin Unordered-List-Reset($margin-top-value: 0, $margin-bottom-value: 0, $padding-left-value: 0) {
+  margin-top: $margin-top-value;
+  margin-bottom: $margin-bottom-value;
+  padding-left: $padding-left-value;
   list-style: none;
 }

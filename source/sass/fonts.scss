@@ -54,3 +54,19 @@
   font-weight: 700;
   font-display: swap;
 }
+/* Playfair Display Regular */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/playfairdisplay-regular.woff2") format("woff2"), url("../fonts/playfairdisplay-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+/* Playfair Display Bold */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/playfairdisplay-bold.woff2") format("woff2"), url("../fonts/playfairdisplay-bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

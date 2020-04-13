@@ -1,0 +1,47 @@
+.numbers {
+  @include Unordered-List-Reset(20px, 0, 0);
+
+  @media (min-width: $large) {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+
+    &--desktop {
+      margin-left: 15px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-image: url("../../img/ico-phone.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  @media (min-width: $extra) {
+    margin-right: 7px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+}
+
+.numbers__item {
+  text-align: center;
+
+  @media (min-width: $large) {
+    margin-right: 20px;
+  }
+
+  & > a {
+    @include Muller-Medium();
+    font-size: 15px;
+    line-height: 120%;
+    color: #949494;
+    text-decoration: none;
+  }
+}

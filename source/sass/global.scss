@@ -1,9 +1,11 @@
 body {
-  min-width: $mobile-min-width;
-  @include Ubuntu-Regular();
+  min-width: $start;
 
+  @include Muller-Regular();
   font-size: 14px;
   line-height: 120%;
+  font-weight: 400;
+  font-style: normal;
   color: #000000;
   background-color: #ffffff;
 }

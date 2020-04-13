@@ -1,0 +1,43 @@
+.menu-trigger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 45px;
+  padding-right: 16px;
+  padding-left: 14px;
+  border: 0;
+  border-left: 1px solid #353535;
+  background-color: #000000;
+
+  @media (min-width: $large) {
+    display: none;
+  }
+}
+
+.menu-trigger__line {
+  width: 24px;
+  height: 1px;
+  background-color: #ffffff;
+
+  &:nth-child(2) {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  &:last-child {
+    width: 10px;
+  }
+
+  .menu-trigger.active &:last-child {
+    display: none;
+  }
+
+  .menu-trigger.active &:first-child {
+    transform: rotate(45deg) translate(4px, 5px);
+  }
+
+  .menu-trigger.active &:nth-child(2) {
+    transform: rotate(-45deg) translateY(-1px);
+  }
+}

@@ -1,0 +1,117 @@
+.stocks {
+  padding: 12px 10px;
+
+  @media (min-width: $large) {
+    display: flex;
+    padding: 0;
+  }
+
+  @media (min-width: $design-end) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.stocks__wrapper {
+  background-color: #ffffff;
+
+  @media (min-width: $extra) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $design-end) {
+    background: linear-gradient(to right, #151829 0%, #151829 50%, #020202 50%, #020202 100%);
+  }
+}
+
+.stocks__item {
+  position: relative;
+  display: block;
+  margin-bottom: 0.5px;
+  text-decoration: none;
+  border-bottom: 1px solid #898c93;
+
+  @media (min-width: $medium) {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $large) {
+    width: 50%;
+  }
+
+  &--novelty {
+    background-color: #151829;
+  }
+
+  &--joy {
+    background-color: #020202;
+  }
+}
+
+.stocks__thumbnail {
+  display: block;
+}
+
+.stocks__content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 55%;
+  color: #ffffff;
+}
+
+.stocks__sub-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  @include GothamPro-Regular();
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @media (min-width: $design-end) {
+    margin-bottom: 20px;
+  }
+
+  .stocks__item:last-child & {
+    margin-bottom: 10px;
+    font-size: 11px;
+
+    @media (min-width: $medium) {
+      margin-bottom: 4px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $design-end) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.stocks__title {
+  margin-top: 4px;
+  margin-bottom: 0;
+
+  @include PlayfairDisplay-Regular();
+  text-align: center;
+  font-size: 11.5px;
+  line-height: 14px;
+
+  @media (min-width: $medium) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

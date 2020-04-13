@@ -1,0 +1,146 @@
+.main-menu {
+  @include Unordered-List-Reset(18px, 19px, 0);
+  padding-bottom: 15px;
+  border-bottom: 1px solid #272727;
+
+  @media (min-width: $large) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  @media (min-width: $extra) {
+    justify-content: flex-end;
+  }
+}
+
+.main-menu__item {
+  margin-bottom: 14px;
+
+  @media (min-width: $large) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $extra) {
+    margin-left: 45px;
+  }
+
+  &--has-sub-menu {
+    @media (min-width: $large) {
+      position: relative;
+    }
+
+    & > a {
+      padding-right: 14px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 2px;
+        display: block;
+        width: 11px;
+        height: 7px;
+        background-image: url("../../img/ico-arrow.svg");
+        transform: rotate(180deg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:hover > a::before {
+      transform: rotate(0);
+    }
+  }
+
+  & > a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    @include Muller-Medium();
+    font-size: 13px;
+    line-height: 13px;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media (min-width: $large) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $extra) {
+      margin-bottom: 33px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -9px;
+      display: none;
+      height: 2px;
+      background-color: #ffffff;
+
+      @media (min-width: $large) {
+        bottom: -14px;
+      }
+    }
+  }
+
+  &:hover > a::after {
+    display: block;
+  }
+}
+
+.main-menu__overlay {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 56px;
+  background-color: #000000;
+
+  @media (min-width: $large) {
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $extra) {
+    top: 95px;
+    left: initial;
+    padding-right: 30px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $design-end) {
+    top: 75px;
+  }
+
+  &.open {
+    display: block;
+  }
+}
+
+.main-menu__overlay-icon {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  fill: #ffffff;
+  transform: translateX(-7px);
+
+  @media (min-width: $large) {
+    display: none;
+  }
+}

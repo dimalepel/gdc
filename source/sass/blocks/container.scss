@@ -3,4 +3,21 @@
   padding-right: 10px;
   padding-left: 10px;
   box-sizing: border-box;
+
+  @media (min-width: $small) {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $medium) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $large) {
+    max-width: 960px;
+  }
+
+  @media (min-width: $extra) {
+    max-width: 1200px;
+  }
 }

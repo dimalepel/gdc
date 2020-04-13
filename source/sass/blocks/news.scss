@@ -1,0 +1,138 @@
+.news {
+  padding-bottom: 6px;
+
+  @media (min-width: $small) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+
+  @media (min-width: $extra) {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  &--home-page {
+    margin-bottom: 29px;
+    padding-bottom: 0;
+  }
+}
+
+.news__wrapper {
+  padding-top: 15px;
+  background-color: #f3f1ec;
+
+  @media (min-width: $extra) {
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 430px, #f3f1ec 431px, #f3f1ec 100%);
+  }
+}
+
+.news__item {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+
+  @media (min-width: $small) {
+    width: calc(50% - 10px);
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  @media (min-width: $large) {
+    width: calc(100% / 3 - 10px);
+  }
+
+  @media (min-width: $extra) {
+    width: calc(100% / 3 - 20px);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+
+    .news--home-page & {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.news__thumbnail {
+  display: block;
+  width: 100%;
+}
+
+.news__thumbnail-wrapper {
+  position: relative;
+}
+
+.news__date {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+  padding: 6px 15px 3px 16px;
+
+  @include Muller-Medium();
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #ede3da;
+  background-color: #000000;
+}
+
+.news__content {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 120px;
+  padding-top: 10px;
+  max-width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+
+  .news--home-page & {
+    align-items: center;
+    align-content: center;
+    height: 140px;
+    max-width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $extra) {
+      height: 180px;
+    }
+  }
+}
+
+.news__title {
+  margin-top: 3px;
+
+  @include PlayfairDisplay-Regular();
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: $extra) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $extra) {
+    margin-top: 14px;
+    margin-bottom: 8px;
+  }
+
+  .news--home-page & {
+    margin-top: 16px;
+
+    @media (min-width: $extra) {
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.news__more {
+  @include Muller-Medium();
+  font-size: 15px;
+  line-height: 21px;
+  text-decoration: underline;
+  color: #b48258;
+}

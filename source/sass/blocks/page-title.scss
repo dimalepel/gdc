@@ -1,0 +1,32 @@
+.page-title {
+  margin-top: 22px;
+  margin-bottom: 27px;
+
+  @include GothamPro-Regular();
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #0d0d0d;
+
+  @media (min-width: $extra) {
+    max-width: 770px;
+    margin-top: 63px;
+    margin-bottom: 51px;
+    font-size: 28px;
+    text-align: left;
+    line-height: 45px;
+    letter-spacing: 0.6px;
+  }
+
+  &--training {
+    margin-bottom: 22px;
+  }
+
+  .single-page & {
+    @media (min-width: $extra) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,1 +1,91 @@
-<!-- header -->
+<header class="page-header">
+  <div class="page-header__inner">
+    <a class="logo__wrapper logo__wrapper--page-header" href="/">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/pic-logo--desk.jpg">
+        <img class="logo logo--page-header" src="img/pic-logo.jpg">
+      </picture>
+      <p class="logo__description">Эксклюзивная профессиональная испанская косметика </p>
+    </a>
+    <div class="page-header__contacts page-header__contacts--desktop">
+      <include src="source/blocks/socials.html"></include>
+      <ul class="numbers numbers--desktop">
+        <li class="numbers__item"><a href="tel:">+375 (17) 284-60-67</a></li>
+        <li class="numbers__item"><a href="tel:">+375 (17) 343-47-61</a></li>
+        <li class="numbers__item"><a href="tel:">+375 (29) 304-60-67</a></li>
+      </ul>
+    </div>
+    <a class="page-header__account" href="#">Екатерина</a>
+    <a class="header-cart" href="#">
+      <span class="header-cart__description">Заказ</span>
+    </a>
+    <button class="menu-trigger js--menu-trigger" type="button" aria-label="Открыть меню">
+      <span class="menu-trigger__line"></span>
+      <span class="menu-trigger__line"></span>
+      <span class="menu-trigger__line"></span>
+    </button>
+    <div class="main-menu__overlay js--menu-overlay">
+      <ul class="main-menu">
+        <li class="main-menu__item main-menu__item--has-sub-menu">
+          <a href="#">Профессиональный уход</a>
+          <ul class="main-menu__sub-menu header-sub-menu">
+            <li class="header-sub-menu__item">
+              <a href="#">Лицо</a>
+            </li>
+            <li class="header-sub-menu__item">
+              <a href="#">Тело</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item main-menu__item--has-sub-menu">
+          <a href="#">Домашний уход</a>
+          <ul class="main-menu__sub-menu header-sub-menu">
+            <li class="header-sub-menu__item">
+              <a href="#">Лицо</a>
+            </li>
+            <li class="header-sub-menu__item">
+              <a href="#">Тело</a>
+            </li>
+            <li class="header-sub-menu__item">
+              <a href="#">Защита от солнца</a>
+            </li>
+            <li class="header-sub-menu__item">
+              <a href="#">Макияж</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <a href="#">Обучение</a>
+        </li>
+        <li class="main-menu__item main-menu__item--has-sub-menu">
+          <a href="#">О компании</a>
+          <ul class="main-menu__sub-menu header-sub-menu">
+            <li class="header-sub-menu__item">
+              <a href="#">О бренде</a>
+            </li>
+            <li class="header-sub-menu__item">
+              <a href="#">Блог</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <a href="#">Новости</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="page-header__contacts page-header__contacts--mobile">
+        <include src="source/blocks/socials.html"></include>
+        <ul class="numbers">
+          <li class="numbers__item"><a href="tel:">+375 (17) 284-60-67</a></li>
+          <li class="numbers__item"><a href="tel:">+375 (17) 343-47-61</a></li>
+          <li class="numbers__item"><a href="tel:">+375 (29) 304-60-67</a></li>
+        </ul>
+      </div>
+      <svg class="main-menu__overlay-icon" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.50039 1.82224L14.2746 8.59649C14.4412 8.76309 14.7084 8.76309 14.875 8.59649C15.0417 8.42988 15.0417 8.16269 14.875 7.99608L7.79903 0.920059C7.63242 0.753453 7.36522 0.753453 7.19862 0.920059L0.12574 7.99608C0.0440089 8.07781 -3.23146e-07 8.18783 -3.27818e-07 8.29471C-3.3249e-07 8.40159 0.0408656 8.51161 0.12574 8.59334C0.292345 8.75995 0.559542 8.75995 0.726147 8.59334L7.50039 1.82224Z"/>
+      </svg>
+    </div>
+  </div>
+</header>

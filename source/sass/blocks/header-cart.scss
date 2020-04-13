@@ -1,0 +1,54 @@
+.header-cart {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+
+  @media (min-width: $design-start) {
+    padding-right: 18px;
+  }
+
+  @media (min-width: $large) {
+    padding-left: 18px;
+    border-left: 1px solid #353535;
+  }
+
+  @media (min-width: $extra) {
+    display: flex;
+    align-items: center;
+    padding-right: 32px;
+    padding-left: 22px;
+    border-left: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 36px;
+    background-image: url("../../img/ico-cart.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $extra) {
+      width: 35px;
+      height: 41px;
+      margin-right: 8px;
+      padding-top: 4px;
+      padding-bottom: 5px;
+      background-image: url("../../img/ico-cart--desk.jpg");
+    }
+  }
+}
+
+.header-cart__description {
+  display: none;
+
+  @media (min-width: $extra) {
+    display: block;
+    @include Muller-Medium();
+    font-size: 15px;
+    line-height: 15px;
+    color: #a9a9a9;
+  }
+}

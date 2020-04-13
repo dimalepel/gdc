@@ -1,0 +1,78 @@
+.single-page {
+  padding-bottom: 53px;
+
+  @media (min-width: $extra) {
+    padding-bottom: 100px;
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 21px;
+
+    @media (min-width: $extra) {
+      margin-bottom: 20px;
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+}
+
+.single-page__meta {
+  @include Unordered-List-Reset(0, 20px, 0);
+
+  @media (min-width: $small) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $extra) {
+    margin-bottom: 30px;
+  }
+}
+
+.single-page__meta-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  @include Muller-Medium();
+  font-size: 15px;
+  line-height: 21px;
+  color: #b48258;
+
+  @media (min-width: $small) {
+    margin-right: 26px;
+  }
+
+  &--date::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    background-image: url("../../img/ico-calendar.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--location::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 19px;
+    margin-right: 5px;
+    background-image: url("../../img/ico-location.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.single-page__thumbnail {
+  @media (min-width: $small) {
+    display: block;
+    width: 100%;
+  }
+
+  @media (min-width: $extra) {
+    margin-bottom: 37px;
+  }
+}

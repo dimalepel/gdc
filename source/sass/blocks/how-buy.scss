@@ -1,0 +1,25 @@
+.how-buy {
+  padding-top: 20px;
+  padding-bottom: 53px;
+
+  @media (min-width: $extra) {
+    padding-top: 27px;
+    padding-bottom: 97px;
+  }
+
+  & h2 {
+    margin-bottom: 17px;
+
+    @media (min-width: $extra) {
+      margin-bottom: 23px;
+    }
+  }
+
+  & .custom-list {
+    max-width: 88%;
+
+    @media (min-width: $extra) {      max-width: 880px;
+    }
+
+  }
+}

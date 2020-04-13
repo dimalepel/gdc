@@ -1,0 +1,148 @@
+.cart {
+  display: block;
+  margin-bottom: 10px;
+
+  @media (min-width: $extra) {
+    display: table;
+    width: 100%;
+    margin-bottom: 56px;
+    border-collapse: collapse;
+  }
+
+  & tbody {
+    display: block;
+
+    @media (min-width: $extra) {
+      display: table-header-group;
+    }
+  }
+}
+
+.cart__row {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 26px;
+
+  @media (min-width: $medium) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $extra) {
+    display: table-row;
+    border-bottom: 1px solid #ede3da;
+  }
+
+  & td {
+    display: block;
+    padding: 0;
+
+    @media (min-width: $extra) {
+      display: table-cell;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.cart__row:not(:last-child) {
+  border-bottom: 1px solid #ede3da;
+}
+
+.cart__row-thumbnail {
+  margin-bottom: 10px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $extra) {
+    width: 17%;
+  }
+
+  & img {
+    display: block;
+    max-height: 120px;
+  }
+}
+
+.cart__row-text {
+  margin-bottom: 23px;
+
+  @media (min-width: $medium) {
+    order: 1;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $extra) {
+    width: 33%;
+  }
+
+  & p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 15px;
+    line-height: 18px;
+
+    @media (min-width: $extra) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.cart__row-category {
+  color: #b48258;
+}
+
+.cart__row-title {
+  color: #000000;
+}
+
+.cart__row-price,
+.cart__row-counter {
+  margin-bottom: 24px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 0;
+  }
+}
+
+.cart__row-price {
+  @media (min-width: $extra) {
+    width: 13%;
+  }
+}
+
+.cart__row-counter {
+  @media (min-width: $extra) {
+    width: 15%;
+  }
+}
+
+.cart__row-price,
+.cart__row-amount {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.cart__row-amount {
+  @media (min-width: $extra) {
+    width: 19%;
+  }
+}
+
+.cart__row-remove {
+  position: absolute;
+  top: 32px;
+  right: 19px;
+
+  @media (min-width: $medium) {
+    position: initial;
+  }
+}

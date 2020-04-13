@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include Unordered-List-Reset(0, 56px, 0);
+
+  @media (min-width: $extra) {
+    margin-top: -27px;
+    margin-bottom: 101px;
+  }
+}
+
+.pagination__item {
+  margin-right: 3px;
+  margin-left: 3px;
+
+  & > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #a79b90;
+    text-decoration: none;
+    border: 1px solid #ddd0c5;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+
+  &.current {
+    & > a {
+      background-color: #ede3da;
+      border-color: #ede3da;
+    }
+  }
+}

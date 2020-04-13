@@ -1,0 +1,92 @@
+.promo {
+  @media (min-width: $medium) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $extra) {
+    align-items: flex-start;
+    margin-top: 68px;
+  }
+}
+
+.promo__wrapper {
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
+
+.promo__item {
+  @media (min-width: $medium) {
+    width: 50%;
+  }
+
+  @media (min-width: $extra) {
+    width: auto;
+  }
+
+  & p:not(.promo__subtitle) {
+    max-width: 98%;
+    margin-top: 11px;
+    margin-bottom: 19px;
+    font-size: 14px;
+    line-height: 160%;
+  }
+}
+
+.promo__thumbnail {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $medium) {
+    max-width: calc(50% - 20px);
+    margin: 0 20px 0 0;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: $extra) {
+    max-width: 100%;
+    margin-right: 70px;
+  }
+}
+
+.promo__subtitle {
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  margin-bottom: 0;
+  @include GothamPro-Medium();
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: $extra) {
+    margin-top: 51px;
+  }
+
+  &::before {
+    content: "";;
+    display: block;
+    width: 69px;
+    height: 1px;
+    margin-right: 14px;
+    background-color: #000000;
+  }
+}
+
+.promo__title {
+  margin-top: 9px;
+  margin-bottom: 0;
+  @include PlayfairDisplay-Regular();
+  font-size: 26px;
+  line-height: 120%;
+  color: #b48258;
+
+  @media (min-width: $extra) {
+    margin-top: 20px;
+    margin-bottom: 42px;
+    font-size: 34px;
+    line-height: 41px;
+  }
+}

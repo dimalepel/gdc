@@ -1,0 +1,44 @@
+.page-description {
+  background-color: #f6f5f1;
+
+  & h2 {
+    @include GothamPro-Regular();
+    font-size: 22px;
+    line-height: 26px;
+    color: #0d0d0d;
+
+    @media (min-width: $extra) {
+      font-size: 26px;
+      line-height: 42px;
+    }
+  }
+
+  & p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.6px;
+
+    @media (min-width: $extra) {
+      max-width: 880px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.page-description__content {
+  max-width: 99%;
+  padding-top: 13px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e9ded4;
+
+  @media (min-width: $extra) {
+    padding-top: 66px;
+  }
+
+  & h2 {
+    margin-bottom: 22px;
+  }
+}

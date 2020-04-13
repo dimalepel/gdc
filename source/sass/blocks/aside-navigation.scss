@@ -1,0 +1,47 @@
+.aside-navigation {
+  @include Unordered-List-Reset();
+}
+
+.aside-navigation__item {
+  & > a {
+    position: relative;
+    display: block;
+    padding: 14px 31px 13px 20px;
+
+    @include Muller-Bold();
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  &--has-sub-menu > a::before,
+  &--has-sub-menu > a::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+  }
+
+  &--has-sub-menu > a::before {
+    right: 10px;
+    top: 19px;
+    width: 12px;
+    height: 2px;
+  }
+
+  &--has-sub-menu > a::after {
+    right: 15px;
+    top: 14px;
+    width: 2px;
+    height: 12px;
+  }
+
+  &--has-sub-menu > a:hover::after {
+    display: none;
+  }
+
+  margin-bottom: 2px;
+}

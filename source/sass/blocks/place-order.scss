@@ -1,0 +1,47 @@
+.place-order {
+  padding-top: 27px;
+  padding-bottom: 53px;
+  background-color: #f6f5f1;
+
+  @media (min-width: $extra) {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+}
+
+.place-order__title {
+  margin-top: 0;
+  margin-bottom: 0px;
+  @include GothamPro-Regular();
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+  color: #b48258;
+
+  @media (min-width: $large) {
+    text-align: left;
+  }
+
+  @media (min-width: $extra) {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+
+.place-order__description {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  @media (min-width: $large) {
+    max-width: 50%;
+    text-align: left;
+  }
+
+  @media (min-width: $extra) {
+    margin-bottom: 42px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

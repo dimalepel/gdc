@@ -1,0 +1,31 @@
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  @include Unordered-List-Reset(16px, 0, 0);
+
+  @media (min-width: $extra) {
+    margin-top: 20px;
+  }
+
+  & li {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+
+  & button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    border-radius: 50%;
+    background-color: #e4e1d9;
+  }
+
+  & .slick-active button {
+    background-color: #b48258;
+  }
+}
