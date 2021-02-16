@@ -14,7 +14,7 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
-    branch: main
+    branch: master
 
 notifications:
   email: false
