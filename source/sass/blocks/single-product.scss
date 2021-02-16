@@ -23,6 +23,7 @@
   & h2:not(.single-product__title) {
     margin-top: 44px;
     margin-bottom: 0;
+
     @include Muller-Bold();
     font-size: 15px;
     line-height: 18px;
@@ -56,6 +57,7 @@
 
 .single-product__title {
   margin-bottom: 24px;
+
   @include Muller-Medium();
   font-size: 14px;
   line-height: 22px;
@@ -82,6 +84,7 @@
 .single-product__price {
   margin-top: 29px;
   margin-bottom: 9px;
+
   @include Muller-Light();
   font-size: 22px;
   text-align: center;

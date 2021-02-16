@@ -52,7 +52,8 @@
 
 .main-slider__title {
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+
   @include GothamPro-Regular();
   font-size: 8px;
   line-height: 10px;
@@ -89,6 +90,7 @@
 .main-slider__description {
   margin-top: 0;
   margin-bottom: 0;
+
   @include PlayfairDisplay-Regular();
   font-size: 12px;
   line-height: 12px;

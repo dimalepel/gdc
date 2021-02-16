@@ -1,6 +1,7 @@
 .slick-dots {
   display: flex;
   justify-content: center;
+
   @include Unordered-List-Reset(16px, 0, 0);
 
   @media (min-width: $extra) {

@@ -46,6 +46,7 @@
 
   @media (min-width: $extra) {
     display: block;
+
     @include Muller-Medium();
     font-size: 15px;
     line-height: 15px;

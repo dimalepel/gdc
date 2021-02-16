@@ -15,7 +15,8 @@
 }
 
 .contacts__item-title {
-  margin-bottom: 0px;
+  margin-bottom: 0;
+
   @include Muller-Medium();
   font-size: 15px;
   line-height: 21px;

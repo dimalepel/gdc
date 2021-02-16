@@ -44,6 +44,11 @@
   &--main-slider {
     display: none;
 
+    &::before,
+    &::after {
+      background-color: #151829;
+    }
+
     @media (min-width: $medium) {
       display: block;
       width: 218px;
@@ -71,13 +76,6 @@
     width: 20px;
     height: 1px;
     background-color: #f3f1ec;
-  }
-
-  &--main-slider {
-    &::before,
-    &::after {
-      background-color: #151829;
-    }
   }
 
   &::before {

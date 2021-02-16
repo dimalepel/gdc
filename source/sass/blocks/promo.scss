@@ -54,6 +54,7 @@
   align-items: center;
   margin-top: 19px;
   margin-bottom: 0;
+
   @include GothamPro-Medium();
   font-size: 12px;
   line-height: 120%;
@@ -66,7 +67,7 @@
   }
 
   &::before {
-    content: "";;
+    content: "";
     display: block;
     width: 69px;
     height: 1px;
@@ -78,6 +79,7 @@
 .promo__title {
   margin-top: 9px;
   margin-bottom: 0;
+
   @include PlayfairDisplay-Regular();
   font-size: 26px;
   line-height: 120%;

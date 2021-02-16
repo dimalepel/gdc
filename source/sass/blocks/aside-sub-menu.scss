@@ -1,5 +1,6 @@
 .aside-sub-menu {
   display: none;
+
   @include Unordered-List-Reset(0, 14px, 0);
 
   .aside-navigation__item--has-sub-menu:hover & {

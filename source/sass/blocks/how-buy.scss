@@ -18,8 +18,8 @@
   & .custom-list {
     max-width: 88%;
 
-    @media (min-width: $extra) {      max-width: 880px;
+    @media (min-width: $extra) {
+      max-width: 880px;
     }
-
   }
 }

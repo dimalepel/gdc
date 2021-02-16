@@ -32,6 +32,7 @@
 .catalog-item__title {
   margin-top: 8px;
   margin-bottom: 0;
+
   @include Muller-Medium();
   font-size: 14px;
   line-height: 14px;

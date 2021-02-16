@@ -11,7 +11,8 @@
 
 .place-order__title {
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+
   @include GothamPro-Regular();
   font-size: 22px;
   line-height: 35px;
